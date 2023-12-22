@@ -3,12 +3,5 @@ languageCode = 'zh-cn'
 title = '伍伍爹'
 theme = 'PaperMod'
 
-[params.page.comment]
-enable = true
-[params.page.comment.giscus]
-enable = true
-repo = "wifi66666/wifi66666.github.io"
-repoId = "R_kgDOK8jBbw"
-category = "Announcements"
-categoryId = "DIC_kwDOK8jBb84Cb7X4"
-mapping = "pathname"
+[params]
+comments = true
