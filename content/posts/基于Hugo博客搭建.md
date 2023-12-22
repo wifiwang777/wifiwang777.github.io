@@ -4,7 +4,10 @@ date = 2023-12-22T17:36:29+08:00
 draft = false
 +++
 
-### Hugo + PaperMod + Github Action + Giscus
+- [Hugo](https://gohugo.io/)
+- [PaperMod 主题](https://github.com/adityatelange/hugo-PaperMod/)
+- [Github Action](https://github.com/features/actions)：CICD自动部署
+- [Giscus](https://giscus.app/zh-CN)：评论系统
 
 # 1、初始化博客
 
@@ -89,6 +92,7 @@ jobs:
 # 3、配置Giscus评论系统
 
 ## 3.1 在 hugo.toml 添加如下配置
+
 ```toml
 [params]
 comments = true
