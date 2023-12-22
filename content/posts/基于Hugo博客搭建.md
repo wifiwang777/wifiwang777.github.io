@@ -1,7 +1,7 @@
 +++
 title = '基于Hugo博客搭建'
 date = 2023-12-22T17:36:29+08:00
-draft = true
+draft = false
 +++
 
 ### Hugo + PaperMod + Github Action + Giscus
