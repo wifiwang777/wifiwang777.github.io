@@ -27,7 +27,7 @@ hugo new content posts/基于Hugo博客搭建.md
 
 # 2、部署到Github Page
 
-## 2.1 新建仓库
+## 2.1 新建Github仓库
 
 仓库名必须为：{username}.github.io, 且要设置为public
 
@@ -35,7 +35,7 @@ hugo new content posts/基于Hugo博客搭建.md
 
 ![](/基于Hugo博客搭建/生成token.png)
 
-## 2.3 将Token添加到仓库的Secrets
+## 2.3 将Token添加到Github仓库的Secrets
 
 ![](/基于Hugo博客搭建/添加secrets.png)
 
@@ -88,11 +88,17 @@ jobs:
 
 # 3、配置Giscus评论系统
 
-## 3.1 仓库开启Discussions
+## 3.1 在 hugo.toml 添加如下配置
+```toml
+[params]
+comments = true
+```
+
+## 3.2 Github仓库中开启Discussions
 
 ![](/基于Hugo博客搭建/开启Discussions.png)
 
-## 3.2 在Github安装Giscus App
+## 3.3 在Github安装Giscus App
 
 [https://github.com/apps/giscus](https://github.com/apps/giscus)
 ![](/基于Hugo博客搭建/安装giscus.png)
@@ -100,7 +106,7 @@ jobs:
 选择指定仓库
 ![](/基于Hugo博客搭建/选择指定仓库.png)
 
-## 3.2 配置Giscus
+## 3.4 配置Giscus
 
 [Giscus Website](https://giscus.app/zh-CN)
 
