@@ -18,7 +18,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.119.0'
+          hugo-version: 'latest'
 #          extended: true
 
       - name: Build
@@ -26,6 +26,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./public
